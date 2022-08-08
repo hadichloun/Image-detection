@@ -1,10 +1,13 @@
 
+import { Container } from "react-bootstrap";
+import InputImage from "./InputImage";
 
 function App() {
   return (
-    <div >
-     hello world 
-    </div>
+    <Container >
+      <div className="mt-3" />
+     <InputImage />
+    </Container>
   );
 }
 
