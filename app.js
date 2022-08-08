@@ -12,8 +12,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/hello', function (req, res) {
     res.send("hello")
 });
-app.use('/predict', predictRouter);
 const port = process.env.PORT || '8000';
+
+app.use('/predict', predictRouter);
 
 app.set('port', port);
 const server = http.createServer(app);
