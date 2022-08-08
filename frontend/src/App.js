@@ -11,7 +11,7 @@ function App() {
     <Container >
       <div className="mt-3" />
       <Stack gap={2}>
-     <InputImage />
+     <InputImage setOutputs={setOutputs} setImageToPredict={setImageToPredict}/>
      <Output outputs={outputs} imageToPredict={imageToPredict} />
      </Stack>
     </Container>
