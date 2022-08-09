@@ -8,7 +8,7 @@ const app = express();
 // We added bodyParser so that we can access `body` in `req` later
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'frontend', "build")));
 app.get('/hello', function (req, res) {
     res.send("hello")
 });
