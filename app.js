@@ -14,7 +14,7 @@ app.get('/hello', function (req, res) {
 });
 app.use('/predict', predictRouter);
 app.get('/', function (req, res) {
-    return res.sendFile(path.join(__dirname, "build", "index.html"))
+    return res.sendFile(path.join(__dirname, "frontend", "build", "index.html"))
 })
 const port = process.env.PORT || '8000';
 
